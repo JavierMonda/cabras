@@ -9,7 +9,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{url('/')}}">
-                <span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
+                <!-- <span class="glyphicon glyphicon-tower" aria-hidden="true"></span> -->
+                <span><img src="{{ url('/img/logo_cabra.png') }}"></span>
                 Cabras Majoreras
             </a>
         </div>
@@ -33,7 +34,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{url('/auth/logout')}}">
+                    <a href="{{url('/logout')}}">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                         Cerrar sesión
                     </a>

@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@getHome');
+Route::get('/', 'HomeController@index');
 
 Route::get('catalog', 'CatalogController@getIndex');
 
@@ -21,9 +21,10 @@ Route::get('catalog/create', 'CatalogController@getCreate');
 
 Route::get('catalog/edit/{id}', 'CatalogController@getEdit');
 
-Route::get('auth/login', function () {
-    return view('auth.login', array('msjLogin' => 'Pantalla Login'));
-});
-Route::get('auth/logout', function() {
-	return ('Pantalla de logout');
+Route::get('logout', 'Auth\LoginController@logout');
+
+Auth::routes();
+
+Route::get('/home', function() {
+	return view('home');
 });
