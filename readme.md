@@ -1,3 +1,11 @@
+# Cabras Majoreras
+
+Este proyecto trata sobre los distintos tipos de cabras de la isla de Fuerteventura.
+Proyecto realizado para la asignatura Implantación de Aplicaciones Web, del Ciclo Formativo de Grado Superior Administración de Sistemas Informáticos en Red.
+
+Proyecto realizado con Laravel, usando MV Homestead.
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
