@@ -15,7 +15,7 @@
             </a>
         </div>
 
-        @if( true || Auth::check() )
+        @if( Auth::check() )
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li{{ Request::is('catalog*') && !Request::is('catalog/create')? ' class=active' : ''}}>

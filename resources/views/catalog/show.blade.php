@@ -7,7 +7,7 @@
 	    <div class="col-sm-6">
 
 	        {{-- TODO: Imagen de la cabra --}}
-	        <img src="{{url('/img')}}/{{$id->imagen}}" />
+	        <img class="img img-responsive" src="/{{$id->imagen}}" />
 	        
 
 	    </div>
@@ -16,9 +16,12 @@
 	        {{-- TODO: Datos de la cabra --}}
 	        <h1>{{ $id->nombre }}</h1>
 	        <p>{{ $id->descripcion }}</p>
-	        <button type="button" class="btn btn-warning">Editar</button>
-	        <button type="button" class="btn btn-default"> &lt; Volver</button>
-
+	        <a href="{{ url('/catalog/edit/' . $id->id ) }}">
+	        	<button type="button" class="btn btn-warning">Editar</button>
+	        </a>
+	        <a href="{{ url('catalog') }}">
+	        	<button type="button" class="btn btn-default"> &lt; Volver</button>
+			</a>
 	    </div>
 	</div>
 
