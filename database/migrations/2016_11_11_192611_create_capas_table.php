@@ -29,6 +29,6 @@ class CreateCapasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cabras');
+        Schema::dropIfExists('capas');
     }
 }

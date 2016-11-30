@@ -20,6 +20,7 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('catalog/edit/{id}', 'CatalogController@getEdit');
 	Route::post('catalog/create', 'CatalogController@postCreate');
 	Route::put('catalog/edit/{id}', 'CatalogController@putEdit');
+	Route::put('catalog/delete/{id}', 'CatalogController@deleteCapa');
 });
 
 Route::get('logout', 'Auth\LoginController@logout');
